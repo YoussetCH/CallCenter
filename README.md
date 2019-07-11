@@ -31,3 +31,8 @@ Para la cola de llamadas se utiliza java.util.concurrent.LinkedBlockingQueue.Lin
 Para el control de los empleados y llamadas uso los collections del paquete concurrent que permite el acceso simuktanea a los datos de dichas listas o mapas desde distintos subprocesos.
 
 Los puntos extras los solucione creando un poll Thread que controle el maximo de hilos simultaneos que corren (No necesariamente mas hilos en paralelo significa mejor performance), tambien dentro de cada subproceso cree, un ciclo de reintentos para cuando una llamada entra y no hay empleados disponibles, tiene un break para que no quede en un loop infinito.
+
+Se puede hacer una llamada a traves de api
+un POST a http://localhost:8080/call con este body
+{"people":{"name":"Aqui va"},"description":"Llamada 8"}
+

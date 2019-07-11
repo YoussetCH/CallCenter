@@ -3,15 +3,22 @@ Existe un call center donde hay 3 tipos de empleados: operador, supervisor y dir
 
 # Requerimientos
 1.- Debe existir una clase Dispatcher encargada de manejar las llamadas, y debe contener el método dispatchCall para que las asigne a los empleados disponibles.
+
 2.- El método dispatchCall puede invocarse por varios hilos al mismo tiempo.
+
 3.- La clase Dispatcher debe tener la capacidad de poder procesar 10 llamadas al mismo tiempo (de modo concurrente).
+
 4.- Cada llamada puede durar un tiempo aleatorio entre 5 y 10 segundos.
+
 5.- Debe tener un test unitario donde lleguen 10 llamadas.
 
 # Extras/Plus
 1.- Dar alguna solución sobre qué pasa con una llamada cuando no hay ningún empleado libre.
+
 2.- Dar alguna solución sobre qué pasa con una llamada cuando entran más de 10 llamadas concurrentes.
+
 3.- Agregar los tests unitarios que se crean convenientes.
+
 4.- Agregar documentación de código.
 
 # Resolución
